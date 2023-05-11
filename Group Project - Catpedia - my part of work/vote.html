@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Vote on Cats</title>
+  <script src="jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="vote.css">
+  <!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <script src="https://kit.fontawesome.com/4ed69a31c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="box">
+    <header>
+      <div class="nav--container">
+        <nav class="nav-bar col-5">
+          <div class="title-logo col-1">
+            <i id="logo" class="fa-solid fa-paw fa-2xl"></i>
+            <h2 id="title">Catpedia</h2>
+          </div>
+          <div class="col-4 links" id="navLinks">
+            <a href="">Breeds</a>
+            <a href="">Care For Cats</a>
+            <a href="">Your favorite cat</a>
+            <a href="javascript:void(0);" id="mobile-nav"><i class="fa-solid fa-bars fa-2xl"></i></a>
+          </div>
+        </nav>
+      </div>
+      <div class="sidebar hidden" id="sidebar">
+        <a href="">Breeds</a>
+        <a href="">Care For Cats</a>
+        <a href="">Your favorite cat</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="row-content">
+        <div id="vote-options" class="vote-options">
+          <button onclick="vote(1)">Vote Up</button>
+          <button onclick="vote(-1)">Vote Down</button>
+          <button onclick="showHistoricVotes()">History</button>
+        </div>
+        <div id="inner-container">
+          <img id="image-to-vote-on" class="col-lg"></img>
+        </div>
+
+        <div id="vote-results" class="vote-results">
+          <button onclick="showVoteOptions()">Show Vote Options</button>
+          <div id="grid" class="imgrid"></div>
+        </div>
+      </section>
+
+
+      <!-- pop up contact box -->
+      <section>
+        <div class="overlay hidden"></div>
+        <div class="contact-box modal hidden">
+          <button class="close-modal">&times</button>
+          <h2>Have other questions? Let us know!</h2>
+          <form id="contactForm" action="#" method="get">
+            <div class="contact-form">
+              <label for="userName" class="box-1">Name</label>
+              <input type="text" id="userName" class="box-4" name="userName" required />
+
+              <label for="userEmail" class="box-1">Email</label>
+              <input type="email" id="userEmail" class="box-4" name="userEmail" required />
+              <label for="question" class="box-1">Question</label>
+              <textarea placeholder="Please leave your message here." id="message" class="box-4"
+                name="message"></textarea>
+            </div>
+            <p id="userEmailError"></p>
+            <br />
+            <input type="submit" value="Send" id="send" />
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-box">
+        <a class="mobile-footer" href="">Breeds</a>
+        <a class="mobile-footer" href="">Care For Cats</a>
+        <a class="mobile-footer" href="">Your Favorite Cat</a>
+        <button id="showModal" class="mobile-footer">Contact us</button>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script src="vote.js"></script>
+<script src="index.js"></script>
+
+</html>

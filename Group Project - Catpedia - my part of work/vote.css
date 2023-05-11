@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Maven+Pro:wght@400;600;800&family=Secular+One&display=swap");
+/* font-family: 'Lato', sans-serif;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Secular One', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 783px) {
+
+  /* For desktop: */
+  .col-1 {
+    width: 20%;
+  }
+
+  .col-2 {
+    width: 40%;
+  }
+
+  .col-3 {
+    width: 60%;
+  }
+
+  .col-4 {
+    width: 80%;
+  }
+
+  .col-5 {
+    width: 100%;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.9;
+  background-color: white;
+  color: #5a4d69;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+header {
+  min-width: min-content;
+}
+
+/* Navigation bar */
+
+.nav-bar {
+  z-index: 100;
+  overflow: hidden;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f6cbd9d8;
+  box-shadow: 0 1px 20px 1px #5a4d6959;
+}
+
+.title-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo {
+  color: #5a4d69;
+  margin: 0 20px;
+}
+
+#title {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  margin-right: 40px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  height: 100%;
+}
+
+.links a {
+  line-height: 50px;
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 16px;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.links a:hover {
+  color: #5a4d69b1;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 783px) {
+  .links a {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+  }
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    overflow: auto;
+    z-index: 100;
+    background-color: #f6cbd9ba;
+    transition: 0.5s;
+  }
+
+  .sidebar a {
+    display: block;
+    color: #5a4d69;
+    padding: 16px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 16px;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 600;
+    transition: 0.4s;
+  }
+
+  .sidebar a:hover {
+    color: white;
+  }
+}
+
+/* main part */
+main {
+  /* height: 100vh; */
+  background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("images-vote/catpaw.png");
+  background-repeat: space;
+  background-size: 8%;
+  background-attachment: fixed;
+  min-height: 82vh;
+}
+
+#inner-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 40px;
+  height: 70vh;
+  width: 33vw;
+}
+
+/* .col-lg2 img {
+  display: block;
+  position: absolute;
+  object-fit: cover;
+} */
+
+#vote-options button,
+#vote-results button {
+  /* font-size: 1.1vw; */
+  border: none;
+  border-radius: 50rem;
+  background-color: #5a4d69;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  font-family: "Secular One", sans-serif;
+}
+
+#vote-options button:hover {
+  background-color: #f6cbd9;
+}
+
+#vote-results button:hover {
+  background-color: #f6cbd9;
+}
+
+.vote-options,
+.vote-results {
+  text-align: center;
+}
+
+.vote-options {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.vote-options button {
+  width: 100px;
+  margin: 0 2vw 0 2vw;
+}
+
+.vote-results {
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+}
+
+.red {
+  border-color: #5a4d69;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 10px;
+}
+
+.green {
+  border-color: #f6cbd9;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 10px;
+}
+
+.display {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.col-lg2 {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  margin: 10px 4.5vw 0 4.5vw;
+  position: relative;
+  flex-basis: 30%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.imgrid {
+  display: inline-block;
+  margin-top: 4vh;
+  padding-bottom: 3vh;
+}
+
+/* Footer */
+@media screen and (max-width: 783px) {
+  footer .footer-box {
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 12px;
+    padding-top: 15px;
+    align-items: flex-end;
+    padding-bottom: 15px;
+  }
+
+  .footer-box .mobile-footer {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+}
+
+footer {
+  background-color: #5a4d69;
+  min-height: 10vh;
+  /* height: calc(100% - 550px); */
+}
+
+.footer-box {
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 1%;
+}
+
+.footer-box a {
+  text-decoration: none;
+  color: #f6cbd9;
+  font-size: 16px;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+}
+
+/* contact box */
+.contact-box {
+  width: 600px;
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  /* to center the box */
+  margin-left: -270px;
+  margin-bottom: -232.5px;
+  background-color: #5a4d69e7;
+  color: #f6cbd9;
+  text-align: center;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px 0 #5a4d69a8;
+  z-index: 100;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px;
+  color: #f6cbd9;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e9e3e672;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+#showModal {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #f6cbd9;
+  font-size: 16px;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+  display: grid;
+  gap: 20px 20px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 3fr 0.5fr;
+}
+
+.contact-form input:invalid:required {
+  background-image: linear-gradient(300deg, #5a4d69, #f6cbd9);
+}
+
+.contact-box h2 {
+  font-family: "Secular One", sans-serif;
+  padding: 20px 0;
+}
+
+.contact-box input[type="text"],
+.contact-box input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  color: #5a4d69;
+  width: 80%;
+  background-color: white;
+  border: none;
+  outline: none;
+  color: #5a4d69;
+  font-size: 18px;
+  font-family: "Secular One", sans-serif;
+}
+
+#message {
+  padding: 10px;
+  font-family: "Secular One", sans-serif;
+}
+
+#send {
+  background-color: #f6cbd9;
+}
+
+input[type="submit"] {
+  width: 100px;
+  font-size: 14px;
+  border: none;
+  border-radius: 50rem;
+  background-color: #5a4d69;
+  padding: 10px;
+  color: white;
+  align-self: center;
+  font-family: "Secular One", sans-serif;
+  transition: 0.4s;
+}
+
+#send:hover {
+  background-color: #5a4d69;
+  color: #f6cbd9;
+}
+
+@media screen and (max-width: 783px) {
+  .footer-box #showModal {
+    font-size: 12px;
+  }
+
+  section .contact-box {
+    width: 80%;
+    bottom: 15%;
+    left: 10%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .contact-box .close-modal {
+    font-size: 35px;
+  }
+
+  .contact-box h2 {
+    font-size: 20px;
+  }
+}
+
+/* media:buttons and image container */
+@media screen and (max-width: 783px) {
+
+  #vote-options button,
+  #vote-results button {
+    /* display: block;
+    margin: 0 auto; */
+    width: 80px;
+  }
+
+  main {
+    min-height: 68vh;
+  }
+
+  footer {
+    min-height: 22vh;
+  }
+
+  #vote-options {
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+  }
+
+  #inner-container {
+    height: 40vh;
+    width: 24vw;
+  }
+
+  #vote-options button,
+  #vote-results button {
+    font-size: 11px;
+  }
+
+  #vote-results button {
+    width: 120px;
+  }
+}
