@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Xiaojun Ma" />
+  <meta name="email" content="ma000141@algonquinlive.com" />
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+
+  <title>Volunteer - Take Meow Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Satisfy&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div id="top">
+      <div id="topleft">
+        <a href="#" class="link"><img src="images/logo.png" alt="Logo" id="logo"></a>
+      </div>
+      <div id="topright">
+        <div id="navbar">
+          <nav class="navigation">
+            <a href="index.html" class="link">HOME</a>
+            <a href="index.html#about" class="link">ABOUT US</a>
+            <a href="volunteer.html" class="link">VOLUNTEER</a>
+            <a href="adopt.html" class="link">ADOPTION</a>
+            <a href="donation.html" class="link">DONATION</a>
+            <a href="index.html#contactus" class="link">CONTACT US</a>
+        </div>
+      </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="beavolunteer">
+      <div id="vol">
+        <p id="volcall"><b>Become a Volunteer Right Now!</b></p>
+      </div>
+    </section>
+
+    <section id="volapply">
+      <div id="apply">
+        <div id="applytop">
+          <p>Please fill in this application to sign up for being a volunteer!</p>
+          <p>We will reply you within 3 work days. Remember to check your mailbox!</p>
+          <p>Meow~</p>
+        </div>
+        <div id="applybottom">
+          <form action="action_page.php">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="null"></option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="Non-binary">Non-binary</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="Address">Address:</label>
+            <input type="street" id="autocomplete" placeholder="Street">
+            <div id="where">
+              <input type="city" id="inputCity" placeholder="City">
+              <input type="state" id="inputState" placeholder="State">
+              <input type="zip" id="inputZip" placeholder="Zip Code">
+              <input type="country" id="inputCountry" placeholder="Country">
+            </div>
+            <label for="experience">Your past experience with pets:</label>
+            <textarea id="experience" name="experience" style="height:200px"></textarea>
+            <label for="reason">Why do you want to volunteer with us?</label>
+            <textarea id="reason" name="reason" style="height:200px"></textarea>
+            <label for="rescue">Have you ever rescued any animal before? Please explain.</label>
+            <textarea id="rescue" name="rescue" style="height:200px"></textarea>
+            <label for="skill">Do you have experience in training cats? Please explain.</label>
+            <textarea id="skill" name="skill" style="height:200px"></textarea>
+
+            <div id="button"><input type="submit" value="SUBMIT"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <a href="#" id="link2">
+      <address id="address">
+        Address:213 Meow Street, Ottawa, ON<br>
+        Tel:6138759914<br>
+        E-mail:<a href="mailto:123@takemeowhome.com" id="link3">123@takemeowhome.com</a>
+      </address>
+    </a>
+    <div id="copyright">&copy; TAKEMEOWHOME2022</div>
+  </footer>
+</body>
+
+</html>

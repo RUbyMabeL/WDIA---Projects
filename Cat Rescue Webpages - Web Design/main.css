@@ -1,0 +1,495 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.link {
+  color: #365b6d;
+}
+
+body {
+  background-color: #eaeef0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: none;
+  margin: 8px;
+  letter-spacing: 0.06em;
+}
+
+#top {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  padding: 20px 26px 15px 26px;
+}
+
+#top > div {
+  border: 1px;
+  height: auto;
+}
+
+#topleft {
+  width: auto;
+  height: auto;
+  min-width: 0;
+  max-width: 100%;
+  align-items: center;
+  display: inline-block;
+}
+
+#logo {
+  max-width: 45% ;
+}
+
+#topright {
+  min-width: 0;
+  max-width: 100%;
+  margin-left: auto;
+  display: block;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+#navbar {
+  text-align: right;
+  padding: 10px;
+}
+
+#navbar a {
+  display: inline-block;
+  line-height: 10vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 2.8vh;
+  color: #365b6d;
+}
+
+#slogan {
+  background-image: url("images/catfamily.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding-left: 10vw;
+  padding-top: 20vh;
+  padding-bottom: 3vh;
+  text-shadow: 1px 1px #365b6d;
+}
+
+#catfamily #appeal {
+  display: flex;
+  width: 15vw;
+  font-family: "Satisfy";
+  font-size: 5.2vw;
+}
+
+#about {
+  font-family: 'Alkalami';
+  height: 100%;
+  background-color: #365b6d;
+  padding: 6vh 10vw;
+  color: white;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+}
+
+#about p {
+  text-align: center;
+  font-family: "Satisfy";
+  font-size: 3rem;
+}
+
+#about {
+  margin-bottom: 80px;
+}
+
+#help, #list, #contactus {
+    margin-bottom: 70px;
+    font-weight: 200;
+    line-height: 1.8em;
+}
+
+#help-title {
+  color: #365b6d;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px
+}
+
+#tips {
+  padding: 30px 15px 30px 15px;
+}
+
+#tips a {
+  text-decoration: underline;
+}
+
+#tips h2 {
+  color: #365b6d;
+  font-style: italic;
+}
+
+#leftfloater {
+  height: 180px;
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+#rightfloater {
+  height: 180px;
+  float: right;
+  margin: 20px 0 20px 20px;
+}
+
+#description1, #description2, #description3 {
+  display: block;
+  margin-bottom: 30px;
+  clear: both;
+  padding: 8px;
+}
+
+#description2 h2 {
+  text-align: right;
+}
+
+#adopted {
+    color: #365b6d;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 120px;
+    margin-bottom: 15px
+}
+
+#unadopted {
+  color: #365b6d;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px
+}
+
+#applyfor {
+  color: #365b6d;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 120px
+}
+
+#gallery {
+  color: #365b6d;
+  padding: 30px 15px 30px 15px; 
+  text-align: center;
+}
+
+#gallerypic {
+  margin: 10px;
+  border: 1px solid #eaeef0;
+  width: 260px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#gallerypic:hover {
+  border: 1px solid #8A9FAA;
+}
+
+#gallerypic img {
+  width: 100%;
+  height: auto;
+}
+
+#desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#contactus {
+  background-image: url(images/contactbg.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  margin-bottom: 0;
+}
+
+#contacttop {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#contactbottom {
+  font-size: 1rem;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #365b6d;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #8A9FAA;
+}
+
+#contactbottom {
+  padding: 20px;
+}
+
+#footer {
+  margin-bottom: 0px;
+  font-weight: 200;
+  letter-spacing: 0.06em;
+  line-height: 1.8em;
+  background-color: #365b6d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#address {
+  font-style: normal;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+#link2, #link3{
+  color: white;
+}
+
+#link3 {
+  text-decoration: underline;
+}
+
+#copyright {
+  margin-bottom: 50px;
+}
+
+/* volunteer page stuff */
+#beavolunteer {
+  background-image: url("images/straycat2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding-left: 10vw;
+  padding-top: 20vh;
+  padding-bottom: 3vh;
+}
+
+#volcall, #adoptcall, #thx {
+  display: flex;
+  width: 15vw;
+  font-family: "Satisfy";
+  font-size: 5.2vw;
+  text-shadow: 2px 1px #365b6d;
+}
+
+#volapply, #adoptapply, #donateinfo {
+  margin-top: 60px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  margin-bottom: 0;
+}
+
+#applytop {
+  font-family: 'Alkalami';
+  text-align: center;
+  font-size: 4vh;
+  color: #365b6d;
+  line-height: 3rem;
+  text-shadow: 1px 1px #d3e1e9;
+}
+
+#applybottom {
+  font-size: 1rem;
+  line-height: 2.8rem;
+}
+
+input[type=text], input[type=tel], select, textarea, input[type="street"], input[type="city"], input[type="state"], input[type="zip"], input[type="county"], input[type="country"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit] {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #365b6d;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#where {
+  text-align: center;
+}
+
+#button {
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  background-color: #8A9FAA;
+}
+
+input[type="city"], input[type="country"], input[type="state"], input[type="zip"] {
+  width: 49.2%;
+}
+
+#adopt {
+  background-image: url("images/adoption.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding-left: 10vw;
+  padding-top: 20vh;
+  padding-bottom: 3vh;
+}
+
+#adopt2 {
+  background-image: url("images/adopt2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding-left: 10vw;
+  padding-top: 20vh;
+  padding-bottom: 3vh;
+  text-shadow: 1px 1px #365b6d;
+}
+
+#donating {
+  background-image: url("images/donation.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding-left: 10vw;
+  padding-top: 20vh;
+  padding-bottom: 3vh;
+}
+
+#donating2 {
+  background-image: url("images/donating2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding-left: 10vw;
+  padding-top: 20vh;
+  padding-bottom: 3vh;
+}
+
+#donation-description, #plzdonate {
+  font-family: 'Alkalami';
+  text-align: center;
+  font-size: 5vh;
+  color: #365b6d;
+  line-height: 3.5rem;
+  text-shadow: 1px 1px #d3e1e9;
+  margin-top: 80px;
+}
+
+#donation-table {
+  text-align: center;
+  padding: 20px 5px 20px 5px;
+  margin: 50px 0 50px 0;
+}
+
+#donation2022 {
+  background-color: #8A9FAA;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+#donation2022, #donation-head, #donation-row, #donation-col {
+  border: 1px solid #DCDCDC;
+  padding: 10px 10px;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#donation-row, #donation-col, #donation-row1, #donation-row2 {
+  width: 200px;
+  height: 80px;
+  text-align: center;
+}
+
+#donation-head {
+  height: 120px;
+  text-align: center;
+  font-size: 2vw;
+  background-color: #365b6d;
+}
+
+#donation-row1 {
+  background-color: #365b6d;
+}
+
+#donation-row2 {
+  text-decoration: underline;
+}
+
+#donatebutton {
+  margin-bottom: 90px;
+}
