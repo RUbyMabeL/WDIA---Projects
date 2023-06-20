@@ -1,0 +1,15 @@
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\bin\Debug\net6.0\Bonus.exe
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\bin\Debug\net6.0\Bonus.deps.json
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\bin\Debug\net6.0\Bonus.runtimeconfig.json
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\bin\Debug\net6.0\Bonus.dll
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\bin\Debug\net6.0\Bonus.pdb
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\Bonus.csproj.AssemblyReference.cache
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\Bonus.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\Bonus.AssemblyInfoInputs.cache
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\Bonus.AssemblyInfo.cs
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\Bonus.csproj.CoreCompileInputs.cache
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\Bonus.dll
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\refint\Bonus.dll
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\Bonus.pdb
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\Bonus.genruntimeconfig.cache
+D:\Web Dev study\Level2\Web Programming 2\Labs\Bonus\obj\Debug\net6.0\ref\Bonus.dll
