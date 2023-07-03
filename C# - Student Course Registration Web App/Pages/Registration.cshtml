@@ -1,0 +1,130 @@
+﻿@page
+@model Lab3.Pages.RegistrationModel
+@using AcademicManagement;
+
+@{
+    ViewData["Title"] = "Registration";
+
+    SelectList Students = new SelectList(Model.Students, "StudentId", "StudentName");
+
+    Model.CourseSelections = new List<SelectListItem>();
+    foreach (Course cs in Model.Courses)
+    {
+        Model.CourseSelections.Add(new SelectListItem(cs.CourseTitle, cs.CourseCode, false));
+    }
+
+    Model.Grade = new Dictionary<string, double?>();
+    foreach (Course c in Model.Courses)
+    {
+        Model.Grade.Add(c.CourseCode, null);
+    }
+}
+
+<div>
+    <h1>Registrations</h1>
+    <hr />
+    <br />
+    <form method="post">
+        <div class="row">
+            <div class="col-md-3">
+                <select class="form-control" asp-for="SelectedStudentId" asp-items="Students" id="select">
+                    <option value="-1">Choose a student ...</option>
+                </select>
+            </div>
+            <div class="col-md-2 text-left">
+                <button class="btn btn-primary" hidden="hidden" type="submit" asp-page-handler="StudentSelected">Get Registrations</button>
+            </div>
+        </div>
+
+        <div id="registrations">
+            @if (Model.RegisterStatus == "HaveRecord")
+            {
+                <p class="alert-primary">The student has registered for the following courses. You can enter or edit the grades</p>
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th><a asp-page="Registration" asp-route-orderby="code">Course Code</a></th>
+                            <th><a asp-page="Registration" asp-route-orderby="title">Course Title</a></th>
+                            <th><a asp-page="Registration" asp-route-orderby="grade">Grade</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (var record in Model.AcademicRecords)
+                            {
+                                <tr>
+                                    <td>@record.CourseCode</td>
+                                    <td>@Model.GetCourseByCode(record.CourseCode).CourseTitle</td>
+                                    <td>
+                                        @{
+                                            if (record.Grade > 0)
+                                            {
+                                                <input type="number" asp-for="@Model.Grade[record.CourseCode]" value="@record.Grade" />
+                                            }
+                                            else
+                                            {
+                                                <input type="number" asp-for="@Model.Grade[record.CourseCode]" value="" />
+                                            }
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                <div class="col-md-2 text-left">
+                    <button class="btn btn-primary" type="submit" asp-page-handler="SubmitGrades">Submit Grades</button>
+                </div>
+            }
+            else if (Model.RegisterStatus == "NoRecord")
+            {
+                <p class="alert-primary">The student has not registered any course. Select course(s) to register.</p>
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th><a asp-page="Registration" asp-route-orderby="code">Course Code</a></th>
+                            <th><a asp-page="Registration" asp-route-orderby="title">Course Title</a></th>
+                            <th>Check to Register</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < Model.CourseSelections.Count(); i++)
+                        {
+                            <tr>
+                                <td>
+                                    @Model.CourseSelections[i].Value
+                                </td>
+                                <td>
+                                    <label asp-for="@Model.CourseSelections[i].Selected">@Model.CourseSelections[i].Text</label>
+                                    <input type="hidden" asp-for="@Model.CourseSelections[i].Value" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" asp-for="@Model.CourseSelections[i].Selected" />
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="col-md-2 text-left">
+                    <button class="btn btn-primary" type="submit" asp-page-handler="Register">Register</button>
+                </div>
+            }
+            else if (Model.RegisterStatus == "NotSelected")
+            {
+                <p class="alert-primary">You must select a student!</p>
+            }
+            else if (Model.RegisterStatus == "NotClicked")
+            {
+                <p class="alert-primary">You must select at least one course!</p>
+            }
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("select").addEventListener("change", function () {
+            document.querySelector("button[type='submit']").click();
+        });
+    </script>
+}
