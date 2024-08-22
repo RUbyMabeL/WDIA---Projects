@@ -1,0 +1,8 @@
+D:\Web Dev study\Level4\Web Programming 2\Labs\Lab6\Lab6ServiceAPI\obj\Release\net6.0\PubTmp\Out\Data\restaurant_review.xml
+D:\Web Dev study\Level4\Web Programming 2\Labs\Lab6\Lab6ServiceAPI\obj\Release\net6.0\PubTmp\Out\Lab6ServiceAPI.exe
+D:\Web Dev study\Level4\Web Programming 2\Labs\Lab6\Lab6ServiceAPI\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Web Dev study\Level4\Web Programming 2\Labs\Lab6\Lab6ServiceAPI\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Web Dev study\Level4\Web Programming 2\Labs\Lab6\Lab6ServiceAPI\obj\Release\net6.0\PubTmp\Out\Lab6ServiceAPI.dll
+D:\Web Dev study\Level4\Web Programming 2\Labs\Lab6\Lab6ServiceAPI\obj\Release\net6.0\PubTmp\Out\Lab6ServiceAPI.deps.json
+D:\Web Dev study\Level4\Web Programming 2\Labs\Lab6\Lab6ServiceAPI\obj\Release\net6.0\PubTmp\Out\Lab6ServiceAPI.runtimeconfig.json
+D:\Web Dev study\Level4\Web Programming 2\Labs\Lab6\Lab6ServiceAPI\obj\Release\net6.0\PubTmp\Out\Lab6ServiceAPI.pdb
